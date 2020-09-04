@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* Hard Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -46,12 +46,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* Soft Reset */
 * {
     box-sizing: border-box;
+    max-width:100%;    
+    /*border:1px solid grey;*/
 }
 
-html, body {
+html, body {    
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -65,12 +67,33 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
+a{
+    text-decoration:none;
+    color:black;
+}
+/* Container */
 .container {
     width: 800px;
     margin: 0 auto;
 }
-
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+}
+header nav{
+    display:flex;
+    justify-content:space-evenly;
+    width:80%;
+}
+header a{
+    text-align:center;
+    padding:2%;
+}
+.outsideHeader{
+    margin:2% 0;
+}
+/* Top Content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +107,7 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+/* Middle Content */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -111,7 +134,7 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+/* Bottom Content*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,7 +148,7 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* Footer */
 footer {
     width: 100%;
     background: black;
