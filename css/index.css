@@ -81,15 +81,16 @@ a{
 header{
     display:flex;
     justify-content:space-between;
+    align-items:baseline;
+    padding:4% 0;
 }
 header nav{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     width:80%;
 }
 header a{
     text-align:center;
-    padding:2%;
 }
 .outsideHeader{
     margin:2% 0;
@@ -226,4 +227,8 @@ footer nav a {
     border-radius:10px;
     background:white;
     border:2px solid black;
+}
+/* Third Section */
+.thirdSection{
+    margin:4% 2%;
 }
