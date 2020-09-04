@@ -76,6 +76,7 @@ a{
     width: 800px;
     margin: 0 auto;
 }
+/* Home page */
 /* Header */
 header{
     display:flex;
@@ -197,3 +198,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* About Page */
