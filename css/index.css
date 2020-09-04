@@ -50,7 +50,7 @@ table {
 * {
     box-sizing: border-box;
     max-width:100%;    
-    border:1px solid grey;
+    /*border:1px solid grey;*/
 }
 
 html, body {    
@@ -199,3 +199,31 @@ footer nav a {
     text-decoration: none;
 }
 /* About Page */
+/* First Section*/
+.firstSection{
+    margin-bottom:2%;
+    padding:2%;
+    border-bottom:1px dashed black;
+}
+/* Second Section */
+.secondSection{
+    display:flex;
+    flex-wrap:wrap;
+}
+.secondSection div{
+    margin:2%;
+    padding:2% 0;
+    width:45%;
+    border-bottom:1px dashed black;
+}
+.secondSection h2{
+    font-size:1.4rem;
+}
+.secondSection button{
+    margin:2% 0;
+    padding:2% 7%;
+    font-size:1.2rem;
+    border-radius:10px;
+    background:white;
+    border:2px solid black;
+}
